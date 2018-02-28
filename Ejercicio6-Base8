@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main ()
+{
+    int a, b, c, aux;
+    cout << "Ingrese un numero" << endl;
+    cin >> a;
+    aux = a;
+    while (a > 0)
+    {
+        b = a % 10;
+        if (b>=8)
+        {
+            cout<<"El digito "<<b<<" no corresponde a la base ocho"<<endl  ;
+        }
+        a = a / 10;
+    }
+    getch();
+    return 0;
+}
