@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include <conio.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b,c=0,aux;
+    cout<<"Ingrese un numero"<<endl;
+    cin>>a;
+    aux=a;
+    while(a>0)
+    {
+        b=a%10;
+        c=(b+c)*10;
+
+        a=a/10;
+    }
+    if((c/10)==aux)
+    {
+        cout<<"El numero es capicua"<<endl;
+    }
+    else
+    {
+        cout<<"El numero no es capicua"<<endl;
+    }
+    getch();
+    return 0;
+}
+
+
