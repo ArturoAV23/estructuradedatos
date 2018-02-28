@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <conio.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+int a,b,c=0;
+cout<<"Ingrese un numero"<<endl;
+cin>>a;
+while(a>0)
+{
+b=a%10;
+c=c+b;
+a=a/10;
+}
+cout<<"La sumatoria es"<<endl;
+cout<<c<<endl;
+getch();
+return 0;
+}
+
